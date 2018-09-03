@@ -1,0 +1,9 @@
+.container {
+  padding: 20rpx;
+}
+.descript {
+  text-align: center;
+}
+.height50 {
+  height: 50rpx;
+}

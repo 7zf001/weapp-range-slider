@@ -1,0 +1,34 @@
+<view class="container"> 
+<view 
+    class="slider-item min" 
+    style="width: {{sliderLength}}rpx; height: {{sliderLength}}rpx; left:{{leftValue}}rpx" 
+    catchtouchmove="_minMove"
+    catchtouchend="setValueLeft"
+    catchtouchcancel="setValueLeft"
+>
+</view>
+<view 
+    class="slider-item max" 
+    style="width: {{sliderLength}}rpx; height: {{sliderLength}}rpx; left:{{rightValue}}rpx"
+    catchtouchmove="_maxMove"
+    catchtouchend="setValueRight"
+    catchtouchcancel="setValueRight"
+>
+</view>
+<view
+    class="slider-body left"
+    style="left: {{ sliderLength / 2 }}rpx; width:{{leftValue}}rpx;"
+>
+</view>
+<view
+    class="slider-body body"
+    style="left:{{leftValue}}rpx; width:{{rightValue-leftValue}}rpx;"
+>
+</view>
+<view
+    class="slider-body right"
+    style="right: {{ sliderLength / 2 }}rpx; width:{{totalLength - rightValue}}rpx;"
+>
+</view>
+<slot></slot>
+</view>

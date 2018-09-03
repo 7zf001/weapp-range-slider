@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "range-slider-component": "/components/range-slider/range-slider"
+  }
+}

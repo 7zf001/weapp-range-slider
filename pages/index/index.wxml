@@ -1,0 +1,37 @@
+<view class="container">
+  <view class='descript'>基本使用</view>
+  <range-slider-component 
+    min="{{0}}" max="{{1000}}" 
+    minDefaultValue="{{ lowValue }}" maxDefaultValue="{{ heightValue }}"
+    bind:lowValueChange="getRangeSliderLowValue"
+    bind:heightValueChange="getRangeSliderHeightValue"
+  />
+  <view class='descript'>
+    <text>{{ lowValue }} - {{ heightValue }}</text>
+  </view>
+  <view class='height50' />
+  <view class='descript'>step:100 按钮可重叠</view>
+  <range-slider-component 
+    min="{{0}}" max="{{1000}}" 
+    step="{{100}}"
+    isCanOverlap="{{true}}"
+    minDefaultValue="{{ lowValue2 }}" maxDefaultValue="{{ heightValue2 }}"
+    bind:lowValueChange="getRangeSliderLowValue2"
+    bind:heightValueChange="getRangeSliderHeightValue2"
+  />
+  <view class='descript'>
+    <text>{{ lowValue2 }} - {{ heightValue2 }}</text>
+  </view>
+  <view class='height50' />
+  <view class='descript'>step:200 按钮不可重叠</view>
+  <range-slider-component 
+    min="{{0}}" max="{{1000}}" 
+    step="{{200}}"
+    minDefaultValue="{{ lowValue3 }}" maxDefaultValue="{{ heightValue3 }}"
+    bind:lowValueChange="getRangeSliderLowValue3"
+    bind:heightValueChange="getRangeSliderHeightValue3"
+  />
+  <view class='descript'>
+    <text>{{ lowValue3 }} - {{ heightValue3 }}</text>
+  </view>
+</view>
